@@ -5,7 +5,7 @@ class CreateWidgets < ActiveRecord::Migration
       t.text :description
       t.integer :stock
 
-      t.timestamps null: false
+      t.timestamps null: false, default: current_timestamp
     end
   end
 end
